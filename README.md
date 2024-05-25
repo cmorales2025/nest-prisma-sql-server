@@ -84,17 +84,9 @@ DATABASE_URL="file:./dev.db"
 # SQL SERVER
 
 # POSTGRESQL
-
-# MYSQL
-```
-
-## Configuración base de datos
-```bash
-# POSTGRESQL
 DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
 
-# SQL SERVER
-DATABASE_URL="sqlserver://username:password@localhost:1433;database=mydatabase;encrypt=true"
+# MYSQL
 ```
 
 # RESUMEN
