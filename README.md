@@ -56,6 +56,14 @@ npx prisma generate
 npx prisma migrate dev --name init
 
 ```
+# datasource Azure SQL
+```js
+datasource db {
+  provider          = "sqlserver"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+```
 
 ## Configuración base de datos
 ```bash
