@@ -65,6 +65,29 @@ datasource db {
 }
 ```
 
+# datasource sqlite
+```js
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+```
+# .ENV
+```bash
+# AZURE SQL
+DATABASE_URL="sqlserver://192.168.10.25;database=nest;user=sa;password=clave;trustServerCertificate=true;"
+SHADOW_DATABASE_URL="sqlserver://192.168.10.25;database=nest_shadow;user=sa;password=clave;trustServerCertificate=true;"
+
+# SQLITE
+DATABASE_URL="file:./dev.db"
+
+# SQL SERVER
+
+# POSTGRESQL
+
+# MYSQL
+```
+
 ## Configuración base de datos
 ```bash
 # POSTGRESQL
